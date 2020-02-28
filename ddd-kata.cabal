@@ -1,0 +1,33 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f814972972b8eeb015e75d3c1aef4811db3f06996558c725714af4d895502a82
+
+name:           ddd-kata
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/marcosh/ddd-kata#readme
+author:         Marco Perone
+maintainer:     pasafama@gmail.com
+copyright:      2020 Marco Perone
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable ddd-kata
+  main-is: Main.hs
+  other-modules:
+      Paths_ddd_kata
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , lens
+    , transformers
+  default-language: Haskell2010
